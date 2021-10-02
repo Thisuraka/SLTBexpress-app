@@ -1,4 +1,4 @@
-package com.example.easygo
+package com.example.sltbexpress
 
 import io.flutter.embedding.android.FlutterActivity
 

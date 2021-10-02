@@ -1,9 +1,9 @@
-import 'package:easygo/onBoarding/edit_user.dart';
+import 'package:sltbexpress/onBoarding/edit_user.dart';
 import 'package:flutter/material.dart';
-import 'package:easygo/styles.dart';
+import 'package:sltbexpress/styles.dart';
 import 'package:blur/blur.dart';
-import 'package:easygo/styles.dart';
-import 'package:easygo/widgets/bottom_navbar.dart';
+import 'package:sltbexpress/styles.dart';
+import 'package:sltbexpress/widgets/bottom_navbar.dart';
 
 @override
 void initState() {}
@@ -61,31 +61,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Container(
                     width: 25,
                     height: 25,
-                    margin: EdgeInsets.only(top: 60, left: 300),
+                    margin: EdgeInsets.only(top: 60, left: 350),
                     child: Image.asset(
                       'assets/icons/edit.png',
                       fit: BoxFit.fill,
-                    ),
-                  ),
-                ),
-                GestureDetector(
-                  onTap: () => {
-                    // Navigator.of(context).push(
-                    //   MaterialPageRoute(
-                    //     builder: (context) => EditProfileScreen(),
-                    //   ),
-                    // )
-                  },
-                  child: Container(
-                    width: 25,
-                    height: 25,
-                    margin: EdgeInsets.only(top: 60, left: 340),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(10),
-                      child: Image.asset(
-                        'assets/icons/signout.png',
-                        fit: BoxFit.fill,
-                      ),
                     ),
                   ),
                 ),

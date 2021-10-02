@@ -1,4 +1,4 @@
-import 'package:easygo/widgets/custom_appbar.dart';
+import 'package:sltbexpress/widgets/custom_appbar.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:flutter/material.dart';
 
@@ -22,7 +22,7 @@ class _QRCodeScreenState extends State<QRCodeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    var dataArray = [_route, _busId, _driver];
+    String dataArray = _route + "," + _busId + "," + _driver;
     return Scaffold(
         appBar: PreferredSize(
           preferredSize: const Size.fromHeight(55),
@@ -43,11 +43,8 @@ class _QRCodeScreenState extends State<QRCodeScreen> {
               Center(
                 child: Image.asset(
                   'assets/images/logo.png',
-                  height: 80,
+                  height: 150,
                 ),
-              ),
-              const SizedBox(
-                height: 50,
               ),
               Container(
                 margin: const EdgeInsets.only(left: 100),
@@ -77,7 +74,7 @@ class _QRCodeScreenState extends State<QRCodeScreen> {
               ),
               Center(
                 child: QrImage(
-                  data: dataArray.toString(),
+                  data: dataArray,
                   version: QrVersions.auto,
                   size: 200.0,
                 ),

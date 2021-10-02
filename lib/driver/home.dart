@@ -1,12 +1,12 @@
-import 'package:easygo/driver/qrcode_screen.dart';
-import 'package:easygo/onBoarding/edit_user.dart';
-import 'package:easygo/widgets/custom_button.dart';
-import 'package:easygo/widgets/custom_dropdown.dart';
+import 'package:sltbexpress/driver/qrcode_screen.dart';
+import 'package:sltbexpress/onBoarding/edit_user.dart';
+import 'package:sltbexpress/widgets/custom_button.dart';
+import 'package:sltbexpress/widgets/custom_dropdown.dart';
 import 'package:flutter/material.dart';
-import 'package:easygo/styles.dart';
+import 'package:sltbexpress/styles.dart';
 import 'package:blur/blur.dart';
-import 'package:easygo/styles.dart';
-import 'package:easygo/widgets/bottom_navbar.dart';
+import 'package:sltbexpress/styles.dart';
+import 'package:sltbexpress/widgets/bottom_navbar.dart';
 
 @override
 void initState() {}
@@ -87,38 +87,17 @@ class _DriverHomeState extends State<DriverHome> {
                       child: Container(
                         width: 25,
                         height: 25,
-                        margin: EdgeInsets.only(top: 60, left: 300),
+                        margin: const EdgeInsets.only(top: 60, left: 350),
                         child: Image.asset(
                           'assets/icons/edit.png',
                           fit: BoxFit.fill,
                         ),
                       ),
                     ),
-                    GestureDetector(
-                      onTap: () => {
-                        // Navigator.of(context).push(
-                        //   MaterialPageRoute(
-                        //     builder: (context) => EditProfileScreen(),
-                        //   ),
-                        // )
-                      },
-                      child: Container(
-                        width: 25,
-                        height: 25,
-                        margin: EdgeInsets.only(top: 60, left: 340),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(10),
-                          child: Image.asset(
-                            'assets/icons/signout.png',
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                      ),
-                    ),
                     Container(
                       height: 80,
                       width: 80,
-                      margin: EdgeInsets.only(top: 120, left: 20),
+                      margin: const EdgeInsets.only(top: 120, left: 20),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(40),
                         color: Colors.blueAccent,

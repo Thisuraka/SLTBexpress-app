@@ -1,12 +1,12 @@
-import 'package:easygo/driver/home.dart';
-import 'package:easygo/onBoarding/edit_user.dart';
-import 'package:easygo/onBoarding/login.dart';
-import 'package:easygo/onBoarding/register_screen.dart';
-import 'package:easygo/onBoarding/splash.dart';
-import 'package:easygo/testScreens/testscreen.dart';
-import 'package:easygo/trips/home.dart';
-import 'package:easygo/trips/new_trip.dart';
-import 'package:easygo/trips/past_trips.dart';
+import 'package:sltbexpress/driver/home.dart';
+import 'package:sltbexpress/onBoarding/edit_user.dart';
+import 'package:sltbexpress/onBoarding/login.dart';
+import 'package:sltbexpress/onBoarding/register_screen.dart';
+import 'package:sltbexpress/onBoarding/splash.dart';
+import 'package:sltbexpress/widgets/qrscanner.dart';
+import 'package:sltbexpress/trips/home.dart';
+import 'package:sltbexpress/trips/new_trip.dart';
+import 'package:sltbexpress/trips/past_trips.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -29,7 +29,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: TestScreen(),
+      home: HomeScreen(),
     );
   }
 }

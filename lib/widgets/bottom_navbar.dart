@@ -1,6 +1,6 @@
-import 'package:easygo/trips/home.dart';
-import 'package:easygo/trips/new_trip.dart';
-import 'package:easygo/trips/past_trips.dart';
+import 'package:sltbexpress/trips/home.dart';
+import 'package:sltbexpress/trips/new_trip.dart';
+import 'package:sltbexpress/trips/past_trips.dart';
 
 import '../../styles.dart';
 import 'package:flutter/material.dart';
@@ -57,8 +57,8 @@ class _BottomNavbarState extends State<BottomNavbar> {
         elevation: 15.0,
         selectedFontSize: 0.0,
         unselectedFontSize: 0.0,
-        // backgroundColor: Colors.grey[300],
-        backgroundColor: const Color(0xFF333333),
+        backgroundColor: Colors.grey[400],
+        // backgroundColor: const Color(0xFF333333),
         type: BottomNavigationBarType.fixed,
         currentIndex: _currentIndex,
         items: [

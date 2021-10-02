@@ -1,8 +1,8 @@
-import 'package:easygo/widgets/horizontal_card.dart';
+import 'package:sltbexpress/widgets/horizontal_card.dart';
 import 'package:flutter/material.dart';
-import 'package:easygo/styles.dart';
-import 'package:easygo/widgets/custom_appbar.dart';
-import 'package:easygo/widgets/bottom_navbar.dart';
+import 'package:sltbexpress/styles.dart';
+import 'package:sltbexpress/widgets/custom_appbar.dart';
+import 'package:sltbexpress/widgets/bottom_navbar.dart';
 
 @override
 void initState() {}

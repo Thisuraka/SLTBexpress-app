@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:easygo/styles.dart';
-import 'package:easygo/widgets/custom_appbar.dart';
-import 'package:easygo/widgets/custom_button.dart';
-import 'package:easygo/widgets/custom_button2.dart';
-import 'package:easygo/widgets/custom_textbox.dart';
+import 'package:sltbexpress/styles.dart';
+import 'package:sltbexpress/widgets/custom_appbar.dart';
+import 'package:sltbexpress/widgets/custom_button.dart';
+import 'package:sltbexpress/widgets/custom_button2.dart';
+import 'package:sltbexpress/widgets/custom_textbox.dart';
 
 @override
 void initState() {}
@@ -47,12 +47,12 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                 Center(
                     child: Image.asset(
                   'assets/images/logo.png',
-                  height: 80,
+                  height: 150,
                 )),
                 Container(
                   height: 550,
                   // color: Colors.amber,
-                  margin: const EdgeInsets.only(top: 120),
+                  margin: const EdgeInsets.only(top: 140),
                   child: Column(
                     children: [
                       CustomTextBox(

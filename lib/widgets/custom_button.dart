@@ -25,11 +25,10 @@ class _CustomButtonScreen extends State<CustomButton> {
         height: widget.height,
         decoration: const BoxDecoration(
           gradient: LinearGradient(colors: <Color>[
-            Color(0xFFFEDD2E),
-            Color(0xFFE8C81C),
+            Color(0xFF1A6FA7),
+            Color(0xFF18679B),
           ]),
           borderRadius: BorderRadius.all(Radius.circular(15.0)),
-          // border: Border.all(color: Colors.black),
         ),
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 13),
@@ -38,7 +37,7 @@ class _CustomButtonScreen extends State<CustomButton> {
             overflow: TextOverflow.visible,
             textAlign: TextAlign.center,
             style: const TextStyle(
-                color: Colors.black,
+                color: Colors.white,
                 fontFamily: 'Roboto',
                 fontSize: 16,
                 fontWeight: FontWeight.bold),
