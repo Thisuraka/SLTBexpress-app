@@ -42,10 +42,11 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: Stack(
                   children: [
                     Center(
-                        child: Image.asset(
-                      'assets/images/logo.png',
-                      height: 80,
-                    )),
+                      child: Image.asset(
+                        'assets/images/logo.png',
+                        height: 80,
+                      ),
+                    ),
                     Container(
                       height: 510,
                       margin: const EdgeInsets.only(top: 150),

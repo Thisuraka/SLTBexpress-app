@@ -24,25 +24,25 @@ class _BottomNavbarState extends State<BottomNavbar> {
     });
     switch (_currentIndex) {
       case 0:
-        // Navigator.of(context).push(
-        //   MaterialPageRoute(
-        //     builder: (context) => HomeScreen(),
-        //   ),
-        // );
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => HomeScreen(),
+          ),
+        );
         break;
       case 1:
-        // Navigator.of(context).push(
-        //   MaterialPageRoute(
-        //     builder: (context) => FavoritesScreen(),
-        //   ),
-        // );
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => NewTrip(),
+          ),
+        );
         break;
       case 2:
-        // Navigator.of(context).push(
-        //   MaterialPageRoute(
-        //     builder: (context) => UserProfile(),
-        //   ),
-        // );
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => PastTripsScreen(),
+          ),
+        );
         break;
 
       default:
@@ -65,56 +65,29 @@ class _BottomNavbarState extends State<BottomNavbar> {
           BottomNavigationBarItem(
               label: "",
               backgroundColor: Colors.white,
-              icon: GestureDetector(
-                onTap: () => {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => HomeScreen(),
-                    ),
-                  )
-                },
-                child: Image.asset(
-                  'assets/icons/home.png',
-                  height: 30.0,
-                  gaplessPlayback: true,
-                ),
+              icon: Image.asset(
+                'assets/icons/home.png',
+                height: 30.0,
+                gaplessPlayback: true,
               )),
           BottomNavigationBarItem(
               label: "",
               backgroundColor: Colors.white,
               icon: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 2.0),
-                child: GestureDetector(
-                  onTap: () => {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => NewTrip(),
-                      ),
-                    )
-                  },
-                  child: Image.asset(
-                    'assets/icons/new.png',
-                    height: 30.0,
-                    gaplessPlayback: true,
-                  ),
+                child: Image.asset(
+                  'assets/icons/new.png',
+                  height: 30.0,
+                  gaplessPlayback: true,
                 ),
               )),
           BottomNavigationBarItem(
               backgroundColor: Colors.white,
               label: "",
-              icon: GestureDetector(
-                onTap: () => {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => PastTripsScreen(),
-                    ),
-                  )
-                },
-                child: Image.asset(
-                  'assets/icons/recent.png',
-                  height: 50.0,
-                  gaplessPlayback: true,
-                ),
+              icon: Image.asset(
+                'assets/icons/recent.png',
+                height: 50.0,
+                gaplessPlayback: true,
               )),
         ],
       ),

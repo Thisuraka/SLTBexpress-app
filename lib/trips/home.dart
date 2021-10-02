@@ -61,10 +61,31 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Container(
                     width: 25,
                     height: 25,
-                    margin: EdgeInsets.only(top: 60, left: 340),
+                    margin: EdgeInsets.only(top: 60, left: 300),
                     child: Image.asset(
                       'assets/icons/edit.png',
                       fit: BoxFit.fill,
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () => {
+                    // Navigator.of(context).push(
+                    //   MaterialPageRoute(
+                    //     builder: (context) => EditProfileScreen(),
+                    //   ),
+                    // )
+                  },
+                  child: Container(
+                    width: 25,
+                    height: 25,
+                    margin: EdgeInsets.only(top: 60, left: 340),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(10),
+                      child: Image.asset(
+                        'assets/icons/signout.png',
+                        fit: BoxFit.fill,
+                      ),
                     ),
                   ),
                 ),
