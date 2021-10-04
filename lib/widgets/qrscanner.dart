@@ -1,11 +1,17 @@
 import 'dart:io';
 
-import 'package:sltbexpress/trips/new_trip.dart';
+import 'package:sltbexpress/screens/inspector/ins_home.dart';
+import 'package:sltbexpress/screens/trips/new_trip.dart';
+import 'package:sltbexpress/screens/trips/new_trip.dart';
 import 'package:flutter/foundation.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 import 'package:flutter/material.dart';
 
 class QRScanner extends StatefulWidget {
+  String user;
+
+  QRScanner({required this.user});
+
   @override
   _QRScannerState createState() => _QRScannerState();
 }
@@ -140,11 +146,21 @@ class _QRScannerState extends State<QRScanner> {
     controller.scannedDataStream.listen((scanData) {
       setState(() {
         result = scanData;
-        Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => NewTrip(
-            scannedData: result!.code,
-          ),
-        ));
+        if (widget.user == "passenger") {
+          Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) => NewTrip(
+              scannedData: result!.code,
+            ),
+          ));
+        } else if (widget.user == "inspector") {
+          Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) => InsHomeScreen(
+              scannedData: result!.code,
+            ),
+          ));
+        } else {
+          null;
+        }
       });
     });
   }

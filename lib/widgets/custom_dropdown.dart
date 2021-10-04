@@ -26,7 +26,7 @@ class _CustomDropDownState extends State<CustomDropDown> {
   @override
   void initState() {
     enabledBorder = const OutlineInputBorder(
-        borderSide: BorderSide(color: Colors.black, width: 0.5));
+        borderSide: BorderSide(color: InactiveColor, width: 0.5));
     super.initState();
   }
 

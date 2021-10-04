@@ -160,35 +160,28 @@ class _NewTripState extends State<NewTrip> {
                           border: Border.all(color: Colors.black),
                           color: Colors.white,
                         ),
-                        child: GestureDetector(
-                          onTap: () => {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (context) => QRScanner(),
-                              ),
-                            )
-                          },
-                          child: Padding(
-                            padding: const EdgeInsets.only(left: 60.0),
-                            child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text("Route             : " + _busRoute,
-                                      style: const TextStyle(fontSize: 18)),
-                                  Text("BusID             : " + _busID,
-                                      style: const TextStyle(fontSize: 18)),
-                                  Text("Driver name  : " + _busDriver,
-                                      style: const TextStyle(fontSize: 18)),
-                                ]),
-                          ),
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 60.0),
+                          child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("Route             : " + _busRoute,
+                                    style: const TextStyle(fontSize: 18)),
+                                Text("BusID             : " + _busID,
+                                    style: const TextStyle(fontSize: 18)),
+                                Text("Driver name  : " + _busDriver,
+                                    style: const TextStyle(fontSize: 18)),
+                              ]),
                         ),
                       )
                     : GestureDetector(
                         onTap: () => {
                           Navigator.of(context).push(
                             MaterialPageRoute(
-                              builder: (context) => QRScanner(),
+                              builder: (context) => QRScanner(
+                                user: 'passenger',
+                              ),
                             ),
                           )
                         },

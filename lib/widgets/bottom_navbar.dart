@@ -1,6 +1,6 @@
-import 'package:sltbexpress/trips/home.dart';
-import 'package:sltbexpress/trips/new_trip.dart';
-import 'package:sltbexpress/trips/past_trips.dart';
+import 'package:sltbexpress/screens/trips/home.dart';
+import 'package:sltbexpress/screens/trips/new_trip.dart';
+import 'package:sltbexpress/screens/trips/past_trips.dart';
 
 import '../../styles.dart';
 import 'package:flutter/material.dart';

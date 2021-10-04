@@ -1,5 +1,5 @@
-import 'package:sltbexpress/driver/qrcode_screen.dart';
-import 'package:sltbexpress/onBoarding/edit_user.dart';
+import 'package:sltbexpress/screens/driver/qrcode_screen.dart';
+import 'package:sltbexpress/screens/onBoarding/edit_user.dart';
 import 'package:sltbexpress/widgets/custom_button.dart';
 import 'package:sltbexpress/widgets/custom_dropdown.dart';
 import 'package:flutter/material.dart';

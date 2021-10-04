@@ -1,4 +1,4 @@
-import 'package:sltbexpress/onBoarding/edit_user.dart';
+import 'package:sltbexpress/screens/onBoarding/edit_user.dart';
 import 'package:flutter/material.dart';
 import 'package:sltbexpress/styles.dart';
 import 'package:blur/blur.dart';
@@ -105,13 +105,13 @@ class _HomeScreenState extends State<HomeScreen> {
                           style: ProfileDataStyle,
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(4.0),
-                        child: Text(
-                          _phoneNumber,
-                          style: ProfileDataStyle,
-                        ),
-                      )
+                      // Padding(
+                      //   padding: const EdgeInsets.all(4.0),
+                      //   child: Text(
+                      //     _phoneNumber,
+                      //     style: ProfileDataStyle,
+                      //   ),
+                      // )
                     ],
                   ),
                 ),
