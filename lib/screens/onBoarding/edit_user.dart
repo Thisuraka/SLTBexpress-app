@@ -19,7 +19,6 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
   TextEditingController _name = TextEditingController();
   TextEditingController _password = TextEditingController();
   TextEditingController _confPassword = TextEditingController();
-  TextEditingController _phoneNumber = TextEditingController();
   TextEditingController _busId = TextEditingController();
 
   String _userType = "passenger"; //driver
@@ -99,17 +98,6 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                         keyboardType: TextInputType.text,
                         newValue: (value) {
                           _name = value as TextEditingController;
-                        },
-                        onTap: () {},
-                      ),
-                      CustomTextBox(
-                        controller: _phoneNumber,
-                        hint: "Phone Number",
-                        labelText: 'Phone Number',
-                        prifixIcon: 'assets/icons/phone.png',
-                        keyboardType: TextInputType.phone,
-                        newValue: (value) {
-                          _phoneNumber = value as TextEditingController;
                         },
                         onTap: () {},
                       ),

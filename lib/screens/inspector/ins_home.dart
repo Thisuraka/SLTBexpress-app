@@ -168,14 +168,6 @@ class _InsHomeScreenState extends State<InsHomeScreen> {
                             keyboardType: TextInputType.text,
                             onTap: () {},
                           ),
-                          CustomDropDown(
-                            hint: "Route",
-                            itemList: RouteList,
-                            newValue: (value) {
-                              _route = value;
-                            },
-                            itemValue: _route,
-                          ),
                           GestureDetector(
                             onTap: () => {
                               Navigator.of(context).push(

@@ -19,7 +19,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
   TextEditingController _name = TextEditingController();
   TextEditingController _password = TextEditingController();
   TextEditingController _confPassword = TextEditingController();
-  TextEditingController _phoneNumber = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -69,14 +68,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           labelText: 'Full Name',
                           prifixIcon: 'assets/icons/account.png',
                           keyboardType: TextInputType.text,
-                          onTap: () {},
-                        ),
-                        CustomTextBox(
-                          controller: _phoneNumber,
-                          hint: "Phone Number",
-                          labelText: 'Phone Number',
-                          prifixIcon: 'assets/icons/phone.png',
-                          keyboardType: TextInputType.phone,
                           onTap: () {},
                         ),
                         CustomTextBox(
